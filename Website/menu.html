@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tiffany Chen">
+    <meta name="date" content="2017-04-03" scheme="YYYY-MM-DD">
+    <meta name="keywords" content="Prantl's Bakery, Pittsburgh, cake, pastries">
+    <meta name="description" content="Prantl's Bakery">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Josefin+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Prantl's Bakery</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" id="logo"><img src="images/logo.png" /></a> <a href="contact.html">contact</a> <a href="visit.html">visit us</a> <a href="menu.html">menu</a> </nav>
+    <div id="container">
+        <h1>MENU</h1>
+        <div id="menu">
+            <div id="tabbed-pane">
+                <ul id="tabs">
+                    <li>
+                        <button class="tab" onclick="showTab(event, 'breakfast')">breakfast</button>
+                    </li>
+                    <li>
+                        <button class="tab" onclick="showTab(event, 'bread')">bread</button>
+                    </li>
+                    <li>
+                        <button class="tab" onclick="showTab(event, 'donuts')">donuts</button>
+                    </li>
+                    <li>
+                        <button class="tab" onclick="showTab(event, 'cakes')">cakes</button>
+                    </li>
+                    <li>
+                        <button class="tab" onclick="showTab(event, 'pies')">pies</button>
+                    </li>
+                    <li>
+                        <button class="tab" onclick="showTab(event, 'sweet-treats')">sweet treats</button>
+                    </li>
+                    <li>
+                        <button class="tab" onclick="showTab(event, 'special')">custom orders</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <div class="menu-info" id="intro" style="display:block;"> Click the tabs on the left to explore our delicious offerings.
+                    <br/>
+                    <h3>our most popular items</h3>
+                    <ol>
+                        <li>burnt almond torte</li>
+                        <li>caramel nut apple pie</li>
+                        <li>carrot cake</li>
+                        <li>roses in the snow</li>
+                        <li>custard puff donut</li>
+                        <li>almond danish</li>
+                        <li>blueberry scone</li>
+                        <li>sticky buns</li>
+                        <li>zebra donut</li>
+                        <li>cinnamon bread</li>
+                    </ol>
+                </div>
+                <div class="menu-info" id="breakfast">
+                    <h3>breakfast</h3>
+                    <div class="left-col">
+                        <h5>danishes</h5>
+                        <ul>
+                            <li>almond danish</li>
+                            <li>blueberry danish</li>
+                            <li>apricot danish</li>
+                            <li>almond danish</li>
+                            <li>cheese danish</li>
+                            <li>pineapple danish</li>
+                        </ul>
+                        <h5>scones</h5>
+                        <ul>
+                            <li>blueberry scone</li>
+                            <li>chocolate chip scone</li>
+                            <li>cinnamon scone</li>
+                            <li>cranberry scone</li>
+                        </ul>
+                        <h5>rolls</h5>
+                        <ul>
+                            <li>cinnamon roll</li>
+                            <li>pecan roll</li>
+                            <li>junior pecan roll</li>
+                            <li>ultra cinnamon</li>
+                            <li>sticky buns</li>
+                        </ul>
+                    </div>
+                    <div class="right-col">
+                        <h5>muffins</h5>
+                        <ul>
+                            <li>blueberry muffin</li>
+                            <li>bran muffin</li>
+                            <li>chocolate chip muffin</li>
+                            <li>cran-nut muffin</li>
+                        </ul>
+                        <h5>other</h5>
+                        <ul>
+                            <li>apple strudel</li>
+                            <li>butter graham</li>
+                            <li>bear claw</li>
+                            <li>sour cream pastry (raspberry or apricot)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-info" id="bread">
+                    <h3>bread</h3>
+                    <div class="left-col">
+                        <ul>
+                            <li>butterleaf rolls</li>
+                            <li>cinnamon bread</li>
+                            <li>croissant</li>
+                            <li>egg bread</li>
+                            <li>english muffin</li>
+                            <li>harvest bread</li>
+                            <li>hot cross buns</li>
+                            <li>paska (plain or raisin)</li>
+                            <li>twist rolls (plain, sesame, poppy)</li>
+                            <li>sandwich buns</li>
+                            <li>prantl's raisin bread</li>
+                            <li>chocolate chip loaf</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-info" id="donuts">
+                    <h3>donuts</h3>
+                    <div class="left-col">
+                        <h5>cake donuts</h5>
+                        <ul>
+                            <li>chocolate</li>
+                            <li>plain</li>
+                            <li>powdered sguar</li>
+                        </ul>
+                        <h5>cruellers</h5>
+                        <ul>
+                            <li>chocolate jimmies</li>
+                            <li>coconut</li>
+                            <li>multicolored jimmies</li>
+                            <li>danish style</li>
+                        </ul>
+                        <h5>puff donuts</h5>
+                        <ul>
+                            <li>cream-filled</li>
+                            <li>custard</li>
+                            <li>raspberry jelly</li>
+                        </ul>
+                    </div>
+                    <div class="right-col">
+                        <h5>ring donuts</h5>
+                        <ul>
+                            <li>chocolate</li>
+                            <li>zebra</li>
+                            <li>chocolate icing &amp; chocolate jimmies</li>
+                            <li>chocolate icing &amp; multicolored jimmies</li>
+                            <li>glazed</li>
+                            <li>sugar</li>
+                            <li>white icing</li>
+                            <li>white icing &amp; multicolored jimmies</li>
+                            <li>rainbow jimmies</li>
+                        </ul>
+                        <h5>filled donuts</h5>
+                        <ul>
+                            <li>chocolate icing &amp; chocolate jimmies</li>
+                            <li>chocolate icing &amp; multicolored jimmies</li>
+                            <li>cherry</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-info" id="cakes">
+                    <h3>cakes</h3>
+                    <p class="caption">Check out our famous almond torte!</p>
+                    <iframe width="560 " height="315 " src="https://www.youtube.com/embed/iLhlZciMfoQ" frameborder="0" allowfullscreen></iframe>
+                    <div class="left-col">
+                        <h5>coffeecake</h5>
+                        <ul>
+                            <li>almond</li>
+                            <li>cherry</li>
+                            <li>chewy pecan</li>
+                            <li>cinnamon raspberry</li>
+                            <li>dutch apple</li>
+                        </ul>
+                        <h5>full-sized cakes</h5>
+                        <ul>
+                            <li>burnt almond torte</li>
+                            <li>carrot cake</li>
+                            <li>chocolate sour cream cake</li>
+                            <li>roses in the snow</li>
+                            <li>marble cake</li>
+                            <li>gobs cake</li>
+                            <li>half &amp; half</li>
+                        </ul>
+                    </div>
+                    <div class="right-col">
+                        <h5>cupcakes</h5>
+                        <ul>
+                            <li>chocolate</li>
+                            <li>yellow</li>
+                            <li>fudge-filled</li>
+                            <lli>carrot</lli>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-info" id="pies" style="margin-bottom: 40%;">
+                    <h3>pies</h3>
+                    <div class="left-col">
+                        <ul>
+                            <li>apple</li>
+                            <li>blueberry</li>
+                            <li>caramel apple nut</li>
+                            <li>cherry</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-info" id="sweet-treats">
+                    <h3>sweet treats</h3>
+                    <div class="left-col">
+                        <h5>cookies</h5>
+                        <ul>
+                            <li>butter cookie</li>
+                            <li>chocolate dunk</li>
+                            <li>chocolate chip</li>
+                            <li>chocolate chunk</li>
+                            <li>sugar cookie</li>
+                            <li>hamentashen (apricot, cherry)</li>
+                            <li>hermit</li>
+                            <li>jelly cookie</li>
+                            <li>m &amp; m cookie</li>
+                            <li>oatmeal raisin cookie</li>
+                            <li>peanut butter cookie</li>
+                            <li>rum tea cookie</li>
+                            <li>thumbprint cookie</li>
+                            <li>toasted almond cookie</li>
+                            <li>vanilla fudge cookie</li>
+                        </ul>
+                    </div>
+                    <div class="right-col">
+                        <h5>pretzels</h5>
+                        <ul>
+                            <li>cinnamon sugar</li>
+                            <li>glazed</li>
+                            <li>maple</li>
+                            <li>maple nut</li>
+                        </ul>
+                        <h5>macaroons &amp; brownies</h5>
+                        <ul>
+                            <li>decadent brownie</li>
+                            <li>traditional brownie</li>
+                            <li>almond macaroon</li>
+                            <li>coconut chocolate macaroon</li>
+                            <li>coconut macaroon</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="menu-info" id="special">
+                    <h3>custom orders</h3>
+                    <p> Need a custom order or something special for an upcoming event or a wedding? See below to learn more. </p>
+                    <h5>celebrations</h5>
+                    <p>Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life’s special events and can customize them to showcase your theme or ideas. </p>
+                    <p>If you would like to inquire about a custom cake not available on our website, please <a href="contact.html">contact us.</a> For tasting appoinments, please click <a href="prantlsbakeryss.clickbook.net">here</a> for the Shadyshide location and <a href="prantlsbakeryms.clickbook.net">here</a> for the Market Square location. </p>
+                    <table class="celebrations">
+                        <tr>
+                            <th>Sizing</th>
+                            <td>We offer custom cake rounds sizes from 8”-12”. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full. </td>
+                        </tr>
+                        <tr>
+                            <th>Pricing</th>
+                            <td> Our cakes vary in price, depending on type, size, and “extras” such as decorations and personalizations. </td>
+                        </tr>
+                        <tr>
+                            <th>Delivery</th>
+                            <td> Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery. </td>
+                        </tr>
+                    </table>
+                    <hr/>
+                    <h5>weddings</h5>
+                    <p> Weddings are such a joyous occasion and each one is different! The same is true of our wedding cakes. We have an almost unlimited combination of flavors and styles to choose from. <a href="store-info.html">Call</a> to schedule an appointment or contact us <a href="contact.html">online.</a> Check out our photo gallery below to see some of the cakes that Prantl's has made. </p>
+                    <!-- Slideshow -->
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 7</div> <img src="images/gallery/image1.jpg" style="width:100%"> </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 7</div> <img src="images/gallery/image2.jpg" style="width:100%"> </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 7</div> <img src="images/gallery/image3.jpg" style="width:100%"> </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">4 / 7</div> <img src="images/gallery/image4.jpg" style="width:100%"> </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">5 / 7</div> <img src="images/gallery/image5.jpg" style="width:100%"> </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">6 / 7</div> <img src="images/gallery/image6.jpg" style="width:100%"> </div>
+                        <div class="mySlides fade">
+                            <div class="numbertext">7 / 7</div> <img src="images/gallery/image7.jpg" style="width:100%"> </div>
+                    </div>
+                    <br/>
+                    <div style="text-align:center"> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span></div>
+                    <table class="celebrations">
+                        <tr>
+                            <th>Pricing</th>
+                            <td>Our wedding cakes vary in price, depending on type, size, and “extras” such as special fillings, pillars, etc.
+                                <br/>$3.25 – $3.75 per serving range</td>
+                        </tr>
+                        <tr>
+                            <th>Sizing</th>
+                            <td> To keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in between cake sizes, we can offer additional sheet cakes up to the amount of slices required. </td>
+                        </tr>
+                        <tr>
+                            <th>Batters &amp; Fillings</th>
+                            <td> Our most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry crème filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). </br>
+                                </br> That being said, if you have something special in mind it can’t hurt to ask! If you'd like to try our delicious flavors, schedule an appointment <a href="prantlsbakeryss.clickbook.net ">here</a> for the Shadyshide location and <a href="prantlsbakeryms.clickbook.net">here</a> for the Market Square location. </td>
+                        </tr>
+                        <tr>
+                            <th>Delivery</th>
+                            <td> We co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery. </td>
+                        </tr>
+                        <tr>
+                            <th>Beyond the Cake</th>
+                            <td> Our wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3” mini-cakes, cupcakes, etc.) and of course there’s always room in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms’ Cakes, Shower Cakes, Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc. </td>
+                        </tr>
+                    </table>
+                    <center>
+                        <a href="http://www.prantlsbakery.com/wp-content/uploads/TheKnot.jpg" target="_blank"><img src="images/TheKnot.jpg" id="theknot"></a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-text">
+            <div id="ft-title">prantl's bakery</div>
+            <div id="ft-subtitle">copyright &copy; 2017</div>
+        </div>
+        <div id="social-media">
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/prantls_bakery/" target="_blank">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#81c584" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /> </svg>
+            </a>
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/PrantlsBakery/" target="_blank">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#81c584" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" /> </svg>
+            </a>
+            <!-- Email Icon -->
+            <a href="mailto:info@prantlsbakery.com">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#81c584" d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z" /> </svg>
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+</body>
+
+</html>

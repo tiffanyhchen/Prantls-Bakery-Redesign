@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Tiffany Chen">
+    <meta name="date" content="2017-04-03" scheme="YYYY-MM-DD">
+    <meta name="keywords" content="Prantl's Bakery, Pittsburgh, cake, pastries">
+    <meta name="description" content="Prantl's Bakery">
+    <link href="https://fonts.googleapis.com/css?family=Arvo|Josefin+Sans:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/jquery-3.2.0.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('#container-graph-1').highcharts({
+                title: {
+                    text: 'Visitor Traffic (avg. per day)'
+                }
+                , subtitle: {
+                    text: 'Shadyside Branch'
+                }
+                , xAxis: {
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm']
+                }
+                , yAxis: {
+                    title: {
+                        text: 'Number of Vistors'
+                    }
+                }
+                , legend: {
+                    layout: 'vertical'
+                    , align: 'right'
+                    , verticalAlign: 'middle'
+                }
+                , plotOptions: {
+                    series: {
+                        pointStart: 0
+                    }
+                }
+                , series: [{
+                    name: 'Visitors'
+                    , data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+    }]
+            });
+            $('#container-graph-2').highcharts({
+                title: {
+                    text: 'Visitor Traffic (avg. per day)'
+                }
+                , subtitle: {
+                    text: 'Market Street Branch'
+                }
+                , xAxis: {
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm']
+                }
+                , yAxis: {
+                    title: {
+                        text: 'Number of Vistors'
+                    }
+                }
+                , legend: {
+                    layout: 'vertical'
+                    , align: 'right'
+                    , verticalAlign: 'middle'
+                }
+                , plotOptions: {
+                    series: {
+                        pointStart: 0
+                    }
+                }
+                , series: [{
+                    name: 'Visitors'
+                    , data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+    }]
+            });
+        });
+    </script>
+    <title>Prantl's Bakery</title>
+</head>
+
+<body>
+    <nav>
+        <a href="index.html" id="logo"><img src="images/logo.png" /></a> <a href="contact.html">contact</a> <a href="visit.html">visit us</a> <a href="menu.html">menu</a> </nav>
+    <div id="container">
+        <h1>VISIT US</h1> <img src="images/prantls-storefront.JPG" id="storefront" />
+        <br/>
+        <div class="left-col">
+            <h5>shadyside</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0661854886207!2d-79.93510368511213!3d40.451672061438494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1490744727608" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <h6>info</h6>
+            <table class="info">
+                <tr>
+                    <th>address</th>
+                    <td>5525 Walnut Street Pittsburgh, PA 15232 </td>
+                </tr>
+                <tr>
+                    <th>phone number</th>
+                    <td>412-621-2092 </td>
+                </tr>
+                <tr>
+                    <th>email</th>
+                    <td><a href="mailto:info@prantlsbakery.com">info@prantlsbakery.com</a></td>
+                </tr>
+                <tr>
+                    <th>
+                        <!-- Yelp Icon -->
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#f49093" d="M10.59,2C11.23,2 11.5,2.27 11.58,2.97L11.79,6.14L12.03,10.29C12.05,10.64 12,11 11.86,11.32C11.64,11.77 11.14,11.89 10.73,11.58C10.5,11.39 10.31,11.14 10.15,10.87L6.42,4.55C6.06,3.94 6.17,3.54 6.77,3.16C7.5,2.68 9.73,2 10.59,2M14.83,14.85L15.09,14.91L18.95,16.31C19.61,16.55 19.79,16.92 19.5,17.57C19.06,18.7 18.34,19.66 17.42,20.45C16.96,20.85 16.5,20.78 16.21,20.28L13.94,16.32C13.55,15.61 14.03,14.8 14.83,14.85M4.5,14C4.5,13.26 4.5,12.55 4.75,11.87C4.97,11.2 5.33,11 6,11.27L9.63,12.81C10.09,13 10.35,13.32 10.33,13.84C10.3,14.36 9.97,14.58 9.53,14.73L5.85,15.94C5.15,16.17 4.79,15.96 4.64,15.25C4.55,14.83 4.47,14.4 4.5,14M11.97,21C11.95,21.81 11.6,22.12 10.81,22C9.77,21.8 8.81,21.4 7.96,20.76C7.54,20.44 7.45,19.95 7.76,19.53L10.47,15.97C10.7,15.67 11.03,15.6 11.39,15.74C11.77,15.88 11.97,16.18 11.97,16.59V21M14.45,13.32C13.73,13.33 13.23,12.5 13.64,11.91C14.47,10.67 15.35,9.46 16.23,8.26C16.5,7.85 16.94,7.82 17.31,8.16C18.24,9 18.91,10 19.29,11.22C19.43,11.67 19.25,12.08 18.83,12.2L15.09,13.17L14.45,13.32Z" /> </svg>
+                    </th>
+                    <td><a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh" target="_blank">shadyside</a></td>
+                </tr>
+            </table>
+            <h6>hours</h6>
+            <table class="info">
+                <tr>
+                    <th>monday</th>
+                    <td>9 am&ndash;4 pm</td>
+                </tr>
+                <tr>
+                    <th>tues&ndash;sat</th>
+                    <td>7 am&ndash;6 pm</td>
+                </tr>
+                <tr>
+                    <th>sunday</th>
+                    <td>9 am&ndash;4 pm</td>
+                </tr>
+            </table>
+            <div id="container-graph-1"></div>
+        </div>
+        <div class="right-col">
+            <h5>downtown</h5>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.542172538821!2d-80.00426918511249!3d40.44113556207964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1490744763651" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <h6>info</h6>
+            <table class="info">
+                <tr>
+                    <th>address</th>
+                    <td>438 Market Street Pittsburgh, PA 15222</td>
+                </tr>
+                <tr>
+                    <th>phone number</th>
+                    <td>412-471-6861</td>
+                </tr>
+                <tr>
+                    <th>email</th>
+                    <td><a href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a></td>
+                </tr>
+                <tr>
+                    <th>
+                        <!-- Yelp Icon -->
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="#f49093" d="M10.59,2C11.23,2 11.5,2.27 11.58,2.97L11.79,6.14L12.03,10.29C12.05,10.64 12,11 11.86,11.32C11.64,11.77 11.14,11.89 10.73,11.58C10.5,11.39 10.31,11.14 10.15,10.87L6.42,4.55C6.06,3.94 6.17,3.54 6.77,3.16C7.5,2.68 9.73,2 10.59,2M14.83,14.85L15.09,14.91L18.95,16.31C19.61,16.55 19.79,16.92 19.5,17.57C19.06,18.7 18.34,19.66 17.42,20.45C16.96,20.85 16.5,20.78 16.21,20.28L13.94,16.32C13.55,15.61 14.03,14.8 14.83,14.85M4.5,14C4.5,13.26 4.5,12.55 4.75,11.87C4.97,11.2 5.33,11 6,11.27L9.63,12.81C10.09,13 10.35,13.32 10.33,13.84C10.3,14.36 9.97,14.58 9.53,14.73L5.85,15.94C5.15,16.17 4.79,15.96 4.64,15.25C4.55,14.83 4.47,14.4 4.5,14M11.97,21C11.95,21.81 11.6,22.12 10.81,22C9.77,21.8 8.81,21.4 7.96,20.76C7.54,20.44 7.45,19.95 7.76,19.53L10.47,15.97C10.7,15.67 11.03,15.6 11.39,15.74C11.77,15.88 11.97,16.18 11.97,16.59V21M14.45,13.32C13.73,13.33 13.23,12.5 13.64,11.91C14.47,10.67 15.35,9.46 16.23,8.26C16.5,7.85 16.94,7.82 17.31,8.16C18.24,9 18.91,10 19.29,11.22C19.43,11.67 19.25,12.08 18.83,12.2L15.09,13.17L14.45,13.32Z" /> </svg>
+                    </th>
+                    <td><a href="https://www.yelp.com/biz/prantls-bakery-pittsburgh-2" target="_blank">market square</a></td>
+                </tr>
+            </table>
+            <h6>hours</h6>
+            <table class="info">
+                <tr>
+                    <th>mon&ndash;fri</th>
+                    <td>7 am&ndash;6 pm</td>
+                </tr>
+                <tr>
+                    <th>saturday</th>
+                    <td>9 am&ndash;6 pm</td>
+                </tr>
+                <tr>
+                    <th>sunday</th>
+                    <td>10 am&ndash;3 pm</td>
+                </tr>
+            </table>
+            <div id="container-graph-2"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-text">
+            <div id="ft-title">prantl's bakery</div>
+            <div id="ft-subtitle">copyright &copy; 2017</div>
+        </div>
+        <div id="social-media">
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/prantls_bakery/" target="_blank">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#81c584" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /> </svg>
+            </a>
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/PrantlsBakery/" target="_blank">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#81c584" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" /> </svg>
+            </a>
+            <!-- Email Icon -->
+            <a href="mailto:info@prantlsbakery.com">
+                <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                    <path fill="#81c584" d="M20,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6A2,2 0 0,0 20,4M20,18H4V8L12,13L20,8V18M20,6L12,11L4,6V6H20V6Z" /> </svg>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
